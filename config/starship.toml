@@ -1,0 +1,25 @@
+# ~/.config/starship.toml
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[git_status]
+conflicted = "💥${count}"
+ahead = "⬆${count}"
+behind = "⬇${count}"
+diverged = "🔱 ⬆${ahead_count} ⬇${behind_count}"
+untracked = "🤷‍${count}"
+stashed = "📦${count}"
+modified = "📝${count}"
+staged = '[++\($count\)](green)'
+renamed = "👅${count}"
+deleted = "🚮${count}"
+
+[package]
+disabled = true
