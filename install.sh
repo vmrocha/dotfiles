@@ -10,7 +10,7 @@ if [ $SPIN ]; then
     git config --global commit.gpgsign true
 
     # Link dotfiles
-    ln -sf ~/dotfiles/zshrc ~/.zshrc
+    #ln -sf ~/dotfiles/zshrc ~/.zshrc
     ln -sf ~/dotfiles/vimrc ~/.vimrc
     ln -sf ~/dotfiles/gemrc ~/.gemrc
 fi
